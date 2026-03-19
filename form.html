@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Form</title>
+  <link rel="stylesheet" href="css/style.css"/>
+
+</head>
+<body>
+<form action="https://formspree.io/f/xbdzwzwn" 
+method="post"
+>
+        <fieldset>
+            <legend>Wolverine Grocery Pickup Interest Form</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name"  name="first-name"required>
+
+            <label for="last-name">Last Name:</label>
+            <input type="text"  id="last-name" name="last-name" required>
+
+            <label for="program">Program: </label>
+            <input type="text" id="program" name="program">
+
+            <label for="pickupdate">Grocery Pickup Date:</label>
+            <input type="date" id="pickupdate" name="pickupdate">
+
+            <div class="radio-group">
+                <p>Available Time for Picking Up Grocery:</p>
+                <input type="radio" id="morning" name="available-time" value="morning">
+                <label for="morning">Morning</label>
+
+                <input type="radio" id="afternoon" name="available-time" value="afternoon">
+                <label for="afternoon">Afternoon</label>
+
+                <input type="radio" id="evening" name="available-time" value="evening">
+                <label for="evening">Evening</label>
+
+                <input type="radio" id="weekend" name="available-time" value="weekend">
+                <label for="weekend">Weekend</label>
+
+            </div>
+
+            <div class="grocery-types">
+                <p>Grocery Interest Check</p>
+                <input type="checkbox" id="fruits" name="interest" value="fruits">
+                <label for="fruits">Fruits</label><br>
+
+                <input type="checkbox" id="vegetables" name="interest" value="vegetables">
+                <label for="vegetables">Vegetables</label><br>
+
+                <input type="checkbox" id="dairy" name="interest" value="dairy">
+                <label for="dairy">Dairy Products (Milk, Cheese, Eggs)</label><br>
+
+                <input type="checkbox" id="proteins" name="interest" value="proteins">
+                <label for="proteins">Proteins (Meat, Fish, Beans)</label><br>
+
+                <input type="checkbox" id="pantry" name="interest" value="pantry">
+                <label for="pantry">Pantry Staples (Rice, Pasta, Oils, Spices)</label><br>
+
+                <input type="checkbox" id="bread" name="interest" value="bread">
+                <label for="bread">Bread</label><br>
+
+            </div>
+
+            <input type="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
